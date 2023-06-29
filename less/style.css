@@ -266,6 +266,7 @@ Snack Section
   }
   #snacks .snacks {
     grid-template-columns: repeat(1, 1fr);
+    row-gap: 5rem;
   }
   #snacks .snacks .snack-content p {
     font-size: 1.2rem;

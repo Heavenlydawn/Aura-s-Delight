@@ -271,6 +271,9 @@ Snack Section
   #snacks .snacks .snack-content p {
     font-size: 1.2rem;
   }
+  #snacks .snacks .snack-content .btn-light {
+    background: #452a27;
+  }
 }
 /*
 =============== 
@@ -358,6 +361,9 @@ Sushi Section
   }
   #sushi .sushi .sushi-cards .sushi-card-content p {
     font-size: 1.2rem;
+  }
+  #sushi .sushi .sushi-cards .sushi-card-content .btn-light {
+    background: #452a27;
   }
 }
 /*
@@ -447,6 +453,9 @@ Ice-cream Section
   #ice .ice .ice-cards .ice-card-content p {
     font-size: 1.2rem;
   }
+  #ice .ice .ice-cards .ice-card-content .btn-light {
+    background: #452a27;
+  }
 }
 /*
 =============== 
@@ -534,5 +543,8 @@ Cake Section
   }
   #cake .cake .cake-cards .cake-card-content p {
     font-size: 1.2rem;
+  }
+  #cake .cake .cake-cards .cake-card-content .btn-light {
+    background: #452a27;
   }
 }

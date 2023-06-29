@@ -29,6 +29,7 @@ body {
   font-family: @font-family;
   max-width: 1500px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 a {
   text-decoration: none;
@@ -150,28 +151,26 @@ Header Section
   }
 
   @media screen and (max-width: 500px) {
-   
     &-left-search,
     &-right {
       display: none;
     }
-      .menu-header-left {
+    .menu-header-left {
+      display: flex;
+      justify-content: space-between;
+      width: 100vw;
+      padding: 10px;
+      .bars {
         display: flex;
-        justify-content: space-between;
-        width: 100vw;
-        padding: 10px;
-        .bars {
-          display: flex;
-          align-items: center;
-  
-          i {
-            font-size: 30px;
-          }
+        align-items: center;
+
+        i {
+          font-size: 30px;
         }
       }
-     
     }
   }
+}
 
 /*
 =============== 
@@ -204,7 +203,22 @@ Hero Section
       margin: -5% auto;
     }
   }
-  @media screen and (max-width:500px) {
+  @media screen and (max-width: 800px) {
+    .hero {
+      width: 100vw;
+      border-radius: 0px 0px 0px 0px;
+
+      h1 {
+        font-size: 5rem;
+      }
+      p {
+        font-size: 1.5rem;
+        width: 500px;
+        line-height: 30px;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
     .hero {
       border-radius: 0px 0px 0px 0px;
       h1 {
@@ -242,10 +256,11 @@ Snack Section
     align-items: center;
     justify-items: center;
     row-gap: 2rem;
+    column-gap: 2rem;
 
     .snack {
       width: 300px;
-      height: 570px;
+      // height: 570px;
       border-radius: 10px;
       box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
       &-img {
@@ -300,6 +315,7 @@ Snack Section
       }
     }
   }
+
   @media screen and (max-width: 500px) {
     .animeText {
       font-size: 2rem;
@@ -313,7 +329,7 @@ Snack Section
           p {
             font-size: 1.2rem;
           }
-          .btn-light{
+          .btn-light {
             background: @primary_btn;
           }
         }
@@ -345,9 +361,10 @@ Sushi Section
     align-items: center;
     justify-items: center;
     row-gap: 2rem;
+    column-gap: 2rem;
     .sushi-card {
       width: 300px;
-      height: 570px;
+      // height: 570px;
       border-radius: 10px;
       box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
       &-img {
@@ -405,7 +422,6 @@ Sushi Section
   @media screen and (max-width: 500px) {
     .animeText {
       font-size: 2rem;
-      
     }
     .sushi-cards {
       grid-template-columns: repeat(1, 1fr);
@@ -416,10 +432,10 @@ Sushi Section
           p {
             font-size: 1.2rem;
           }
-          .btn{
+          .btn {
             margin: 5% 0;
           }
-          .btn-light{
+          .btn-light {
             background: @primary_btn;
           }
         }
@@ -451,10 +467,10 @@ Ice-cream Section
     align-items: center;
     justify-items: center;
     row-gap: 2rem;
-
+    column-gap: 2rem;
     .ice-card {
       width: 300px;
-      height: 570px;
+      // height: 570px;
       border-radius: 10px;
       box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
       &-img {
@@ -521,10 +537,10 @@ Ice-cream Section
           p {
             font-size: 1.2rem;
           }
-          .btn-light{
+          .btn-light {
             background: @primary_btn;
           }
-          .btn{
+          .btn {
             margin: 5% 0;
           }
         }
@@ -555,10 +571,10 @@ Cake Section
     align-items: center;
     justify-items: center;
     row-gap: 2rem;
-
+    column-gap: 2rem;
     .cake-card {
       width: 300px;
-      height: 570px;
+      // height: 570px;
       border-radius: 10px;
       box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
       &-img {
@@ -626,10 +642,10 @@ Cake Section
           p {
             font-size: 1.2rem;
           }
-          .btn{
+          .btn {
             margin: 5% 0;
           }
-          .btn-light{
+          .btn-light {
             background: @primary_btn;
           }
         }

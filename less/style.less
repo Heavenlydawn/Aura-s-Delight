@@ -1,0 +1,508 @@
+/*
+=============== 
+Variables
+===============
+*/
+@font-family: sans-serif;
+@primary_color: #f4f4f4;
+@neutral: #ffffff;
+@black: #000;
+@border:1px solid #000;
+@border_radius: 10px;
+@font_small: 14px;
+@font_normal: 16px;
+@font_medium: 18px;
+@font_big: 25px;
+@font_large: 40px;
+@text_color: #0d0807;
+@bg_primary_color: #f0e6e5;
+@bg_secondary_color: #34201d;
+@primary_btn: #452a27;
+@secondary_btn: #f8f3f2;
+
+/*
+=============== 
+Element Selectors
+===============
+*/
+body {
+  font-family: @font-family;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+span {
+  color: @bg_secondary_color;
+}
+.bold {
+  font-weight: bold;
+  font-size: 16px;
+}
+.green {
+  color: rgb(18, 183, 18);
+  font-weight: bold;
+}
+small {
+  font-weight: bold;
+}
+#aura .aura {
+  position: relative;
+}
+/*
+=============== 
+Header Section
+===============
+*/
+
+#aura .aura header .menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &-left {
+    display: flex;
+    align-items: center;
+    h2 {
+      width: 100px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .bars {
+      display: none;
+    }
+    &-search {
+      background: #edeef2;
+      border-radius: 12px;
+      height: 50px;
+      width: 200px;
+      display: flex;
+      align-items: center;
+
+      input {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #83859c;
+        border: none;
+        outline: none;
+        background: inherit;
+        padding-left: 12px;
+
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 2rem;
+      margin-right: 24px;
+
+      a {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: right;
+        letter-spacing: 0.1px;
+        color: #2b2b43;
+      }
+    }
+
+    &-user {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .cart-bag {
+        height: 50px;
+        width: 50px;
+        background: #f3f4ff;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 30px;
+          width: 30px;
+        }
+      }
+      .user {
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+/*
+=============== 
+Hero Section
+===============
+*/
+#aura .aura #hero {
+  .hero {
+    background: url(../images/Limg1.jpg) no-repeat;
+    background-position: cover;
+    background-size: cover;
+    text-align: center;
+    width: auto;
+    // height: auto;
+    height: 80vh;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(0%, 0%);
+    border-radius: 20px 20px 0px 0px;
+    color: @bg_primary_color;
+
+    h1 {
+      font-size: 10rem;
+      margin-top: 1%;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 25px;
+      width: 700px;
+      margin: -5% auto;
+    }
+  }
+}
+
+/*
+=============== 
+Snack Section
+===============
+*/
+
+#snacks {
+  .animeText {
+    position: relative;
+    font-size: 7rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 80px;
+    cursor: pointer;
+    .text {
+      color: transparent;
+      -webkit-text-stroke: 1px @bg_secondary_color;
+    }
+    .hover-text{
+      position: absolute;
+      inset: 0;
+      width: 0%;
+      color: @bg_secondary_color;
+      overflow: hidden;
+      border-right: 6px solid @bg_secondary_color;
+      transition: .5s ease-in-out infinite;
+      &:hover{
+        width: 100%;
+        filter: drop-shadow(0 0 40px @bg_secondary_color);
+      }
+    }
+
+    h2 {
+      text-align: center;
+    }
+   
+  }
+  .snacks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    .snack {
+      width: 300px;
+      height: 570px;
+      border-radius: 10px;
+      box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+      &-img {
+        padding: 10px;
+        width: 280px;
+        height: 300px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+      &-content {
+        padding: 0 10px;
+
+        p {
+          font-size: 1.2rem;
+        }
+        .star-icon {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+        .price {
+          display: flex;
+          gap: 1rem;
+        }
+        .btn {
+          position: relative;
+          &-light {
+            box-shadow: 0 3px 10pc rgba(0, 0, 0, 0.2);
+            outline: none;
+            border: none;
+            border-radius: 40px;
+            padding: 15px 30px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+          }
+          .fa-plus {
+            position: absolute;
+            bottom: 10%;
+            right: 2%;
+            font-size: 16px;
+            background: lightgrey;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+/*
+=============== 
+Sushi Section
+===============
+*/
+#sushi .sushi {
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .sushi-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    .sushi-card {
+      width: 300px;
+      height: 570px;
+      border-radius: 10px;
+      box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+      &-img {
+        padding: 10px;
+        width: 280px;
+        height: 300px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+      &-content {
+        padding: 0 10px;
+
+        p {
+          font-size: 1.2rem;
+        }
+        .star-icon {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+        .price {
+          display: flex;
+          gap: 1rem;
+        }
+        .btn {
+          position: relative;
+          &-light {
+            box-shadow: 0 3px 10pc rgba(0, 0, 0, 0.2);
+            outline: none;
+            border: none;
+            border-radius: 40px;
+            padding: 15px 30px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+          }
+          .fa-plus {
+            position: absolute;
+            bottom: 10%;
+            right: 2%;
+            font-size: 16px;
+            background: lightgrey;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+=============== 
+Ice-cream Section
+===============
+*/
+#ice .ice {
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    .ice-card {
+      width: 300px;
+      height: 570px;
+      border-radius: 10px;
+      box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+      &-img {
+        padding: 10px;
+        width: 280px;
+        height: 300px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+      &-content {
+        padding: 0 10px;
+
+        p {
+          font-size: 1.2rem;
+        }
+        .star-icon {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+        .price {
+          display: flex;
+          gap: 1rem;
+        }
+        .btn {
+          position: relative;
+          &-light {
+            box-shadow: 0 3px 10pc rgba(0, 0, 0, 0.2);
+            outline: none;
+            border: none;
+            border-radius: 40px;
+            padding: 15px 30px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+          }
+          .fa-plus {
+            position: absolute;
+            bottom: 10%;
+            right: 2%;
+            font-size: 16px;
+            background: lightgrey;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+/*
+=============== 
+Cake Section
+===============
+*/
+#cake .cake {
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    .cake-card {
+      width: 300px;
+      height: 570px;
+      border-radius: 10px;
+      box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+      &-img {
+        padding: 10px;
+        width: 280px;
+        height: 300px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+      &-content {
+        padding: 0 10px;
+
+        p {
+          font-size: 1.2rem;
+        }
+        .star-icon {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+        .price {
+          display: flex;
+          gap: 1rem;
+        }
+        .btn {
+          position: relative;
+          &-light {
+            box-shadow: 0 3px 10pc rgba(0, 0, 0, 0.2);
+            outline: none;
+            border: none;
+            border-radius: 40px;
+            padding: 15px 30px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+          }
+          .fa-plus {
+            position: absolute;
+            bottom: 10%;
+            right: 2%;
+            font-size: 16px;
+            background: lightgrey;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

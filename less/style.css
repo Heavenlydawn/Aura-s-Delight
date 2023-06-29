@@ -1,0 +1,457 @@
+/*
+=============== 
+Variables
+===============
+*/
+/*
+=============== 
+Element Selectors
+===============
+*/
+body {
+  font-family: sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+span {
+  color: #34201d;
+}
+.bold {
+  font-weight: bold;
+  font-size: 16px;
+}
+.green {
+  color: #12b712;
+  font-weight: bold;
+}
+small {
+  font-weight: bold;
+}
+#aura .aura {
+  position: relative;
+}
+/*
+=============== 
+Header Section
+===============
+*/
+#aura .aura header .menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#aura .aura header .menu-header-left {
+  display: flex;
+  align-items: center;
+}
+#aura .aura header .menu-header-left h2 {
+  width: 100px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#aura .aura header .menu-header-left .bars {
+  display: none;
+}
+#aura .aura header .menu-header-left-search {
+  background: #edeef2;
+  border-radius: 12px;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+#aura .aura header .menu-header-left-search input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #83859c;
+  border: none;
+  outline: none;
+  background: inherit;
+  padding-left: 12px;
+}
+#aura .aura header .menu-header-left-search input i {
+  font-size: 14px;
+}
+#aura .aura header .menu-header-right {
+  display: flex;
+}
+#aura .aura header .menu-header-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-right: 24px;
+}
+#aura .aura header .menu-header-right ul a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.1px;
+  color: #2b2b43;
+}
+#aura .aura header .menu-header-right-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#aura .aura header .menu-header-right-user .cart-bag {
+  height: 50px;
+  width: 50px;
+  background: #f3f4ff;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aura .aura header .menu-header-right-user .cart-bag img {
+  height: 30px;
+  width: 30px;
+}
+#aura .aura header .menu-header-right-user .user {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+/*
+=============== 
+Hero Section
+===============
+*/
+#aura .aura #hero .hero {
+  background: url(../images/Limg1.jpg) no-repeat;
+  background-position: cover;
+  background-size: cover;
+  text-align: center;
+  width: auto;
+  height: 80vh;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(0%, 0%);
+  border-radius: 20px 20px 0px 0px;
+  color: #f0e6e5;
+}
+#aura .aura #hero .hero h1 {
+  font-size: 10rem;
+  margin-top: 1%;
+}
+#aura .aura #hero .hero p {
+  font-size: 1.5rem;
+  line-height: 25px;
+  width: 700px;
+  margin: -5% auto;
+}
+/*
+=============== 
+Snack Section
+===============
+*/
+#snacks .animeText {
+  position: relative;
+  font-size: 7rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  line-height: 80px;
+  cursor: pointer;
+}
+#snacks .animeText .text {
+  color: transparent;
+  -webkit-text-stroke: 1px #34201d;
+}
+#snacks .animeText .hover-text {
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  color: #34201d;
+  overflow: hidden;
+  border-right: 6px solid #34201d;
+  transition: 0.5s ease-in-out infinite;
+}
+#snacks .animeText .hover-text:hover {
+  width: 100%;
+  filter: drop-shadow(0 0 40px #34201d);
+}
+#snacks .animeText h2 {
+  text-align: center;
+}
+#snacks .snacks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+#snacks .snacks .snack {
+  width: 300px;
+  height: 570px;
+  border-radius: 10px;
+  box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+}
+#snacks .snacks .snack-img {
+  padding: 10px;
+  width: 280px;
+  height: 300px;
+}
+#snacks .snacks .snack-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#snacks .snacks .snack-content {
+  padding: 0 10px;
+}
+#snacks .snacks .snack-content p {
+  font-size: 1.2rem;
+}
+#snacks .snacks .snack-content .star-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#snacks .snacks .snack-content .price {
+  display: flex;
+  gap: 1rem;
+}
+#snacks .snacks .snack-content .btn {
+  position: relative;
+}
+#snacks .snacks .snack-content .btn-light {
+  box-shadow: 0 3px 10pc rgba(0, 0, 0, 0.2);
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 30px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+}
+#snacks .snacks .snack-content .btn .fa-plus {
+  position: absolute;
+  bottom: 10%;
+  right: 2%;
+  font-size: 16px;
+  background: lightgrey;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*
+=============== 
+Sushi Section
+===============
+*/
+#sushi .sushi h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+#sushi .sushi .sushi-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+#sushi .sushi .sushi-cards .sushi-card {
+  width: 300px;
+  height: 570px;
+  border-radius: 10px;
+  box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+}
+#sushi .sushi .sushi-cards .sushi-card-img {
+  padding: 10px;
+  width: 280px;
+  height: 300px;
+}
+#sushi .sushi .sushi-cards .sushi-card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#sushi .sushi .sushi-cards .sushi-card-content {
+  padding: 0 10px;
+}
+#sushi .sushi .sushi-cards .sushi-card-content p {
+  font-size: 1.2rem;
+}
+#sushi .sushi .sushi-cards .sushi-card-content .star-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#sushi .sushi .sushi-cards .sushi-card-content .price {
+  display: flex;
+  gap: 1rem;
+}
+#sushi .sushi .sushi-cards .sushi-card-content .btn {
+  position: relative;
+}
+#sushi .sushi .sushi-cards .sushi-card-content .btn-light {
+  box-shadow: 0 3px 10pc rgba(0, 0, 0, 0.2);
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 30px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+}
+#sushi .sushi .sushi-cards .sushi-card-content .btn .fa-plus {
+  position: absolute;
+  bottom: 10%;
+  right: 2%;
+  font-size: 16px;
+  background: lightgrey;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*
+=============== 
+Ice-cream Section
+===============
+*/
+#ice .ice h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+#ice .ice-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+#ice .ice-cards .ice-card {
+  width: 300px;
+  height: 570px;
+  border-radius: 10px;
+  box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+}
+#ice .ice-cards .ice-card-img {
+  padding: 10px;
+  width: 280px;
+  height: 300px;
+}
+#ice .ice-cards .ice-card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#ice .ice-cards .ice-card-content {
+  padding: 0 10px;
+}
+#ice .ice-cards .ice-card-content p {
+  font-size: 1.2rem;
+}
+#ice .ice-cards .ice-card-content .star-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#ice .ice-cards .ice-card-content .price {
+  display: flex;
+  gap: 1rem;
+}
+#ice .ice-cards .ice-card-content .btn {
+  position: relative;
+}
+#ice .ice-cards .ice-card-content .btn-light {
+  box-shadow: 0 3px 10pc rgba(0, 0, 0, 0.2);
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 30px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+}
+#ice .ice-cards .ice-card-content .btn .fa-plus {
+  position: absolute;
+  bottom: 10%;
+  right: 2%;
+  font-size: 16px;
+  background: lightgrey;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*
+=============== 
+Cake Section
+===============
+*/
+#cake .cake h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+#cake .cake-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+#cake .cake-cards .cake-card {
+  width: 300px;
+  height: 570px;
+  border-radius: 10px;
+  box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+}
+#cake .cake-cards .cake-card-img {
+  padding: 10px;
+  width: 280px;
+  height: 300px;
+}
+#cake .cake-cards .cake-card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#cake .cake-cards .cake-card-content {
+  padding: 0 10px;
+}
+#cake .cake-cards .cake-card-content p {
+  font-size: 1.2rem;
+}
+#cake .cake-cards .cake-card-content .star-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#cake .cake-cards .cake-card-content .price {
+  display: flex;
+  gap: 1rem;
+}
+#cake .cake-cards .cake-card-content .btn {
+  position: relative;
+}
+#cake .cake-cards .cake-card-content .btn-light {
+  box-shadow: 0 3px 10pc rgba(0, 0, 0, 0.2);
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 30px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+}
+#cake .cake-cards .cake-card-content .btn .fa-plus {
+  position: absolute;
+  bottom: 10%;
+  right: 2%;
+  font-size: 16px;
+  background: lightgrey;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}

@@ -358,6 +358,7 @@ Sushi Section
   }
   #sushi .sushi .sushi-cards {
     grid-template-columns: repeat(1, 1fr);
+    row-gap: 5rem;
   }
   #sushi .sushi .sushi-cards .sushi-card-content p {
     font-size: 1.2rem;
@@ -449,6 +450,7 @@ Ice-cream Section
   }
   #ice .ice .ice-cards {
     grid-template-columns: repeat(1, 1fr);
+    row-gap: 5rem;
   }
   #ice .ice .ice-cards .ice-card-content p {
     font-size: 1.2rem;
@@ -540,6 +542,7 @@ Cake Section
   }
   #cake .cake .cake-cards {
     grid-template-columns: repeat(1, 1fr);
+    row-gap: 5rem;
   }
   #cake .cake .cake-cards .cake-card-content p {
     font-size: 1.2rem;

@@ -123,6 +123,25 @@ Header Section
   width: 50px;
   border-radius: 10px;
 }
+@media screen and (max-width: 500px) {
+  #aura .aura header .menu-header-left-search,
+  #aura .aura header .menu-header-right {
+    display: none;
+  }
+  #aura .aura header .menu-header .menu-header-left {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 10px;
+  }
+  #aura .aura header .menu-header .menu-header-left .bars {
+    display: flex;
+    align-items: center;
+  }
+  #aura .aura header .menu-header .menu-header-left .bars i {
+    font-size: 30px;
+  }
+}
 /*
 =============== 
 Hero Section
@@ -150,6 +169,19 @@ Hero Section
   line-height: 25px;
   width: 700px;
   margin: -5% auto;
+}
+@media screen and (max-width: 500px) {
+  #aura .aura #hero .hero {
+    border-radius: 0px 0px 0px 0px;
+  }
+  #aura .aura #hero .hero h1 {
+    font-size: 3rem;
+    margin-top: 1%;
+  }
+  #aura .aura #hero .hero p {
+    font-size: 1.1rem;
+    width: 300px;
+  }
 }
 /*
 =============== 
@@ -235,60 +267,8 @@ Snack Section
   #snacks .snacks {
     grid-template-columns: repeat(1, 1fr);
   }
-  #snacks .snacks .snack {
-    width: 300px;
-    height: 570px;
-    border-radius: 10px;
-    box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
-  }
-  #snacks .snacks .snack-img {
-    padding: 10px;
-    width: 280px;
-    height: 300px;
-  }
-  #snacks .snacks .snack-img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  #snacks .snacks .snack-content {
-    padding: 0 10px;
-  }
   #snacks .snacks .snack-content p {
     font-size: 1.2rem;
-  }
-  #snacks .snacks .snack-content .star-icon {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  #snacks .snacks .snack-content .price {
-    display: flex;
-    gap: 1rem;
-  }
-  #snacks .snacks .snack-content .btn {
-    position: relative;
-  }
-  #snacks .snacks .snack-content .btn-light {
-    box-shadow: 0 3px 10pc rgba(0, 0, 0, 0.2);
-    outline: none;
-    border: none;
-    border-radius: 40px;
-    padding: 15px 30px;
-    width: 100%;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  #snacks .snacks .snack-content .btn .fa-plus {
-    position: absolute;
-    bottom: 10%;
-    right: 2%;
-    font-size: 16px;
-    background: lightgrey;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
   }
 }
 /*
@@ -368,6 +348,17 @@ Sushi Section
   border-radius: 50%;
   cursor: pointer;
 }
+@media screen and (max-width: 500px) {
+  #sushi .sushi .animeText {
+    font-size: 2rem;
+  }
+  #sushi .sushi .sushi-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #sushi .sushi .sushi-cards .sushi-card-content p {
+    font-size: 1.2rem;
+  }
+}
 /*
 =============== 
 Ice-cream Section
@@ -445,6 +436,17 @@ Ice-cream Section
   border-radius: 50%;
   cursor: pointer;
 }
+@media screen and (max-width: 500px) {
+  #ice .ice .animeText {
+    font-size: 2rem;
+  }
+  #ice .ice .ice-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #ice .ice .ice-cards .ice-card-content p {
+    font-size: 1.2rem;
+  }
+}
 /*
 =============== 
 Cake Section
@@ -521,4 +523,15 @@ Cake Section
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  #cake .cake .animeText {
+    font-size: 2rem;
+  }
+  #cake .cake .cake-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #cake .cake .cake-cards .cake-card-content p {
+    font-size: 1.2rem;
+  }
 }
